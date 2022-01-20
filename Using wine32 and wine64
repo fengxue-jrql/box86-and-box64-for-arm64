@@ -1,0 +1,6 @@
+1.Suppose you have completed the environment setup section above
+2.Box86 wine taskmgr starts the wine task manager and graphically selects exe to start through the wine task manager. Box86 and wine32 can only start Win32 exe.
+3.Switch to 64 bit wine:
+rm -rf ~/.wine
+Box64 wine64 taskmgr, start the task manager of wine64. Then use the task manager to create a new task to start 64 bit windows exe. Box64 and wine64 can only run win64 exe.
+In this way, x86 and x64 Windows applications and games can be run on arm64 by switching box86 and box64.
