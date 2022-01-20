@@ -1,0 +1,30 @@
+1.About using the platform: applicable to arm64 Debian and linuxdeploy chroot arm64 debian。
+2.Arm64 Linux system needs multi architecture support. First sudo dpkg -- add architecture armhf, and then sudo apt update updates your software source.
+3.Install the following dependent library box86 to run normally on arm64:
+sudo apt install zenity:armhf libasound*:armhf libstdc++6:armhf mesa*:armhf
+4.For box64:sudo apt install mesa* zenity*
+5.After completing the dependency library, use sudo dpkg - I. / * Deb install the two Debs I provided
+6.About environment variables: you need to write the following environment variables in / etc / profile
+#Please add to the end of / etc / profile
+export BOX86_PATH=~/wine/bin/
+export BOX86_LD_LIBRARY_PATH=~/wine/lib/wine/i386-unix/:/lib/i386-linux-gnu:/lib/aarch64-linux-gnu/
+export BOX64_PATH=~/wine64/bin/
+export BOX64_LD_LIBRARY_PATH=~/wine64/lib/i386-unix/:~/wine64/lib/wine/x86_64-unix/:/lib/i386-linux-gnu/:/lib/x86_64-linux-gnu:/lib/aarch64-linux-gnu/
+7.Make environment variables effective immediately:/ Etc / profile. There is no need to restart the machine.
+8.Please go to the official playonlinux repository to download wine32 and wine64
+9.Now I will make a demonstration with wine32 7.0 RC and wine64 6.14 of playonlinux.
+cp PlayOnLinux-wine-7.0-rc4-upstream-linux-x86.tar.gz ~
+cp PlayOnLinux-wine-6.14-upstream-linux-amd64.tar.gz ~
+cd ~
+mkdr wine
+mkdir wine64
+mv PlayOnLinux-wine-7.0-rc4-upstream-linux-x86.tar.gz ~/wine
+cd ~/wine
+tar -xvf PlayOnLinux-wine-7.0-rc4-upstream-linux-x86.tar.gz
+rm -rf PlayOnLinux-wine-7.0-rc4-upstream-linux-x86.tar.gz
+cd ~
+mv PlayOnLinux-wine-6.14-upstream-linux-amd64.tar.gz ~/wine64
+cd ~/wine64
+tar -xvf PlayOnLinux-wine-6.14-upstream-linux-amd64.tar.gz
+rm -rf PlayOnLinux-wine-6.14-upstream-linux-amd64.tar.gz
+Now you can use box86 and box64 on arm64.
