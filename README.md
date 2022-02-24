@@ -5,6 +5,8 @@ sudo apt update
 sudo apt install zenity:armhf libasound*:armhf libstdc++6:armhf mesa*:armhf
 sudo apt install vulkan* -mesa- mesa*
 sudo dpkg -i ./*.deb
+start wine by:
+box64 wine64 taskmgr
 
 # New test video
 vedio1:【【box86 and box64 wine】安卓手机同时执行windows 64位和32位exe-哔哩哔哩ht】
