@@ -6,3 +6,6 @@ Demo video: blibli cinnamon 2018
 [2]CPU load demonstration
 https://m.bilibili.com/video/BV1Lb4y1J7dU?share_medium=android&share_plat=android&share_session_id=1482d58d-48ce-42d7-88ad-aa07745de871&share_source=COPY&share_tag=s_i&timestamp=1642690732&unique_k=RlWvEEM&share_times=1
 [3]Box86 wine white album:https://m.bilibili.com/video/BV1wT4y127B9?share_medium=android&share_plat=android&share_session_id=55c096cf-56bf-45dd-84aa-46ad8560350c&share_source=COPY&share_tag=s_i&timestamp=1642690777&unique_k=2q5f59h&share_times=1
+
+now box86 and box64 wine can run x86 and x64 exe on arm64 ubuntu/debian，worked like windows。The new test vedio is
+【【box86 and box64 wine】安卓手机同时执行windows 64位和32位exe-哔哩哔哩】 https://b23.tv/kB8RnFt
