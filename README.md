@@ -1,3 +1,4 @@
+#box86 and box64 wine(run x86 and x64 exe on arm64 debian/ubuntu by box86 and box64)
 This is the binary package of box86 and box64 open source code and the DEB package of wine, which is used to run x86 and x64exe on arm647ubuntu??box86 worked with box64 and no need armhf chroot/proot on arm64 ubuntu/debian.Your Ubuntu and Debian must support multiple architectures. It is recommended to use arm64 Ubuntu 21 10 or debian 11.Please use the published DEB instead of the old DEB under code. There is no need to set the environment variable manually. The execution of X86 and x64exe is no longer separated. Non snapdragon 845 processors can also run the DEB. In arm64debian / Ubuntu, the FPS of Ubuntu is about 10fps higher than that of Debian.
 sudo dpkg --add-architecture armhf
 sudo apt update
@@ -6,10 +7,7 @@ sudo apt install vulkan* -mesa- mesa*
 sudo dpkg -i ./*.deb
 New test video
 【【box86 and box64 wine】安卓手机同时执行windows 64位和32位exe-哔哩哔哩】 https://b23.tv/NaO37Vy
-
-
-old test video
-# box86-and-box64-for-arm64
+#old test video
 在arm64上运行box86和box64，box86不需要armhf chroot，box86和box64共同工作。
 How to run box86 and box64 on arm64 Linux without 32-bit chroot? Please read how to set the environment and using Win32 and wine64. I also provide box86 and box64 DEB for arm64 Debian. Box86 is cross compiled. How to compile and refer to the official instructions of box86. I mainly provide a convenient environment setting. Reference: how to set the environment.
 Demo video: blibli cinnamon 2018
